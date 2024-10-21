@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Attribute Selectors Example</title>
+	<style>
+		a {
+			text-decoration: none;
+		}
+
+		/* Selects all <a> elements with href attribute */
+		a[href] {
+			color: blue;
+		}
+
+		/* Selects all <a> elements with href attribute with value starting with "https" */
+		a[href^="https"] {
+			font-weight: bold;
+		}
+
+		/* Selects all <a> elements with href attribute with value ending with ".pdf" */
+		a[href$=".pdf"] {
+			color: red;
+		}
+
+		/* Selects all <a> elements with href attribute with value containing "w3schools" */
+		a[href*="w3schools"] {
+			text-decoration: underline;
+		}
+	</style>
+</head>
+
+<body>
+	<a href="https://www.w3schools.com/">W3Schools</a>
+	<a href="https://developer.mozilla.org/">MDN Web Docs</a>
+	<a href="https://www.google.com/search?q=html+css">Google Search</a>
+	<a href="https://www.example.com/files/document.pdf">Document</a>
+</body>
+
+</html>
